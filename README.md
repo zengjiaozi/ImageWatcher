@@ -15,8 +15,8 @@ compile 'com.github.bumptech.glide:glide:4.0.0'
 <style name="AppTheme.Translucent">
         <item name="android:windowBackground">@color/translucent_bg</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>//如果不想全屏，去掉这行
+        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 </style>
 ```
@@ -44,6 +44,13 @@ mImageWatcher.setOnDismissListener(new OnDismissListener() {
                 overridePendingTransition(0, 0);
             }
         });
+```
+- 处理onBackPressed() （当有共享元素转场动画时，必选项）
+```
+@Override
+    public void onBackPressed() {
+        mImageWatcher.exit();
+    }
 ```
 - 添加操作视图（可选项）
 ```
