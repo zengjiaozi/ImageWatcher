@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //获取当前View的位置大小信息
-                Bundle viewInfoBundle = ImageWatcher.createViewInfoBundle(mImageViewFirst, mImageViewSecond);
+                Bundle viewInfoBundle = new Bundle();
                 viewInfoBundle.putStringArrayList("image_url", (ArrayList<String>) urls);
                 viewInfoBundle.putInt("position", 0);
 

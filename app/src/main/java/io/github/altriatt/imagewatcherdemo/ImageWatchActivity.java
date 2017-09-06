@@ -67,4 +67,10 @@ public class ImageWatchActivity extends AppCompatActivity {
     private void findView() {
         mImageWatcher = findViewById(R.id.image_watcher);
     }
+
+
+    @Override
+    public void onBackPressed() {
+        mImageWatcher.exit();
+    }
 }

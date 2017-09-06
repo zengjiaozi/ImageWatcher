@@ -17,6 +17,7 @@ import com.altria.imagewatcher.adapter.ImageAdapter;
 import com.altria.imagewatcher.base.OnDismissListener;
 import com.altria.imagewatcher.entity.ImageViewInfo;
 import com.altria.imagewatcher.entity.ImageViewInfoList;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -104,6 +105,17 @@ public class ImageWatcher extends FrameLayout {
         onDismissListener.onDismiss();
     }
 
+    public void exit(){
+        if (onDismissListener != null) {
+            mBtnBack.setVisibility(GONE);
+            imageIndex.setVisibility(View.GONE);
+
+            imageAdapter.exitImageWatcher(currentItemPosition);
+        }else {
+            dismiss();
+        }
+    }
+
     /**
      * 绑定图片操作视图
      */
@@ -154,8 +166,7 @@ public class ImageWatcher extends FrameLayout {
         mBtnBack.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onDismissListener != null)
-                    imageAdapter.exitImageWatcher(currentItemPosition);
+                exit();
             }
         });
     }
