@@ -118,11 +118,10 @@ public class ImageAdapter extends PagerAdapter {
                                         prepareScene(image, position, infoList.get(position));
                                         //播放动画
                                         runEnterAnimation(image);
-                                    }else {
+                                    }else if (infoList != null) {
                                         //获取转场动画信息
                                         getImageTagInfo(image, position, infoList.get(position));
                                     }
-
                                     return true;
                                 }
                             });

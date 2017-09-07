@@ -10,7 +10,6 @@ import com.altria.imagewatcher.entity.ImageViewInfoList;
 import com.altria.imagewatcher.view.ImageWatcher;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by altria on 17-9-4.
