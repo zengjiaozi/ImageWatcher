@@ -5,7 +5,7 @@ ImageWatcher是一个自定义图片查看器，功能包含图片放大缩小�
 ## 用法
 1. 导入
 ```
-compie 'io.github.altriatt:imagewatcher:1.0.1'
+compie 'io.github.altriatt:imagewatcher:1.0.2'
 //依赖 建议Glide配置磁盘缓存原图尺寸
 compile 'com.github.bumptech.glide:glide:4.0.0'
 ```
