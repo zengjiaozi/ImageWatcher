@@ -1,6 +1,6 @@
 # ImageWatcher
 ## 介绍
-ImageWatcher是一个自定义图片查看器，功能包含图片放大缩小、双击恢复初始大小、下滑退出(类似微信朋友圈图片下滑退出功能)和图片共享元素转场动画。
+ImageWatcher是一个自定义图片查看器，功能包含图片放大缩小、双击恢复初始大小、下滑退出(类似微信朋友圈图片下滑退出功能)和图片共享元素转场动画。  
 <img src="https://github.com/AltriaTT/ImageWatcher/blob/master/1504669961865_video.gif" width="270" height="480"/>
 ## 用法
 1. 导入
